@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#800000">
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="searchPressed"
+        android:text="@string/search_button"
+        android:textColor="#0c0c0c"
+        android:textSize="14sp"
+        app:backgroundTint="#FFD700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/back_button"
+        android:textColor="#0C0C0C"
+        android:textSize="14sp"
+        app:backgroundTint="#FFD700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/FilterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/academic_year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/year_array" />
+
+            <Spinner
+                android:id="@+id/sex_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/sex_array" />
+
+            <Spinner
+                android:id="@+id/dorm_style_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/dorm_rooms" />
+
+            <Spinner
+                android:id="@+id/attribute_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/attribute_options" />
+
+            <Spinner
+                android:id="@+id/attribute_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/attribute_options" />
+
+            <Spinner
+                android:id="@+id/attribute_5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/attribute_options" />
+
+            <Spinner
+                android:id="@+id/attribute_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/attribute_options" />
+
+            <Spinner
+                android:id="@+id/attribute_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/attribute_options" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

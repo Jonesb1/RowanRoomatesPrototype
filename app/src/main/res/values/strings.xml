@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RR Search Screen Test</string>
+    <string name="search_button">Search</string>
+    <string name="back_button">Back</string>
+
+    <string-array name="year_array">
+        <item>Freshman</item>
+        <item>Sophmore</item>
+        <item>Junior</item>
+        <item>Senior</item>
+    </string-array>
+
+    <string-array name="sex_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="dorm_rooms">
+        <item>suite-style</item>
+        <item>double</item>
+        <item>triple</item>
+    </string-array>
+
+    <string-array name="attribute_options">
+        <item>option 1</item>
+        <item>option 2</item>
+        <item>option 3</item>
+    </string-array>
+</resources>
